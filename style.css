@@ -23,6 +23,8 @@
   --color--lightest--active: #cccccc;
   --color--primary: #209fdf;
   --color--primary--active: #79c5ec;
+  --color--primary-light: #79c6ec;
+  --color--primary-light--active: #20a0df;
   --color--secondary: #ffc080;
   --color--secondary--active: #ff8d1a;
   --color--tertiary: #9fdf20;
@@ -270,6 +272,21 @@ button, input, select, textarea {
   color: var(--color--secondary);
   font-weight: 700;
 }
+.main__buttons {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing--small);
+  margin: var(--spacing--large) 0;
+  padding: 0;
+}
+
+#maze {
+  width: calc(100% + 8px);
+  margin: 0 -4px;
+}
 
 /**
  * Layout - Footer
@@ -392,4 +409,90 @@ button, input, select, textarea {
   border-block-start-width: 2px;
   border-inline-end-width: 2px;
   transform: rotate(45deg) translate(-10%, 10%);
+}
+
+/**
+ * Component - Button
+ */
+.button {
+  border: 0;
+  border-radius: var(--spacing--x-small);
+  text-align: center;
+  text-decoration: none;
+  word-break: break-word;
+  outline: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  text-decoration: none;
+  transform: scale(96%);
+}
+.button--primary {
+  background-color: var(--color--primary);
+  color: var(--color--lightest);
+}
+.button--primary:hover {
+  background-color: var(--color--primary--active);
+  color: var(--color--darkest);
+}
+.button--primary:hover {
+  box-shadow: 0 0 var(--spacing--small) var(--color--primary);
+}
+.button--primary-light {
+  background-color: var(--color--primary-light);
+  color: var(--color--darkest);
+}
+.button--primary-light:hover {
+  background-color: var(--color--primary-light--active);
+  color: var(--color--lightest);
+}
+.button--primary-light:hover {
+  box-shadow: 0 0 var(--spacing--small) var(--color--primary-light);
+}
+.button--secondary {
+  background-color: var(--color--secondary);
+  color: var(--color--darkest);
+}
+.button--secondary:hover {
+  background-color: var(--color--secondary--active);
+  color: var(--color--lightest);
+}
+.button--secondary:hover {
+  box-shadow: 0 0 var(--spacing--small) var(--color--secondary);
+}
+.button--tertiary {
+  background-color: var(--color--tertiary);
+  color: var(--color--darkest);
+}
+.button--tertiary:hover {
+  background-color: var(--color--tertiary--active);
+  color: var(--color--lightest);
+}
+.button--tertiary:hover {
+  box-shadow: 0 0 var(--spacing--small) var(--color--tertiary);
+}
+.button--sm {
+  display: block;
+  width: 10.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin-inline: auto;
+}
+.button--md {
+  display: block;
+  width: 16.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  margin-inline: auto;
+}
+.button--lg {
+  display: block;
+  width: 22.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  margin-inline: auto;
 }

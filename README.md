@@ -1,8 +1,14 @@
-# QWEL CREATIVE TEMPLATE
+# 迷路の自動生成 | Maze Generation
 
-[QWEL.DESIGN](https://qwel.design/) の作品集 Creative Crafts のためのテンプレート
+階層的な棒倒し法アルゴリズムによる迷路ジェネレーター。  
+迷路と巨大な数字にハマっている6才未満の子供に対し、  
+「オジサンね、迷路を無量大数個も作ったんだよ！」  
+と言って驚かせるのが鉄板ネタ。  
+A4印刷に対応  
 
-[https://qwel.design/creative/](https://qwel.design/creative/)
+[https://qwel.design/creative/maze/](https://qwel.design/creative/maze/)
+
+---
 
 ---
 
