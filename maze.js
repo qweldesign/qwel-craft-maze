@@ -1,8 +1,8 @@
 /**
  * Maze
- * このファイルは QWEL Project の一部です。
- * Part of the QWEL Project © QWEL.DESIGN 2025
- * Licensed under GPL v3 – see https://qwel.design/
+ * © 2026 QWEL.DESIGN (https://qwel.design)
+ * Released under the MIT License.
+ * See LICENSE file for details.
  */
 
 var SIZE = 8, WIDTH = 91 * SIZE, HEIGHT = 121 * SIZE;
